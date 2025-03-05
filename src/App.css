@@ -12,12 +12,6 @@
     min-height: 100vh; 
 }
 
-.outfit-900 {
-    font-family: "Outfit", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 900;
-    font-style: normal;
-}
 .header-wrapper {
     height: 40vh; /* Takes 30% of app-container's height */
     display: flex;
