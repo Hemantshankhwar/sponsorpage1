@@ -16,7 +16,7 @@ const SponsorSection = () => {
                 {sponsors.platinum.map((img, index) => (
                     <div key={index} className="sponsor-wrapper">
                         <img src={img} alt="Platinum Sponsor" className="sponsor-image" />
-                        <span className="sponsor-label">Sponsor</span>
+                        <span className="sponsor-label">Sponsor !!</span>
                     </div>
                 ))}
             </div>
@@ -26,17 +26,17 @@ const SponsorSection = () => {
                 {sponsors.gold.map((img, index) => (
                     <div key={index} className="sponsor-wrapper">
                         <img src={img} alt="Gold Sponsor" className="sponsor-image" />
-                        <span className="sponsor-label">Sponsor</span>
+                        <span className="sponsor-label">Sponsor !!</span>
                     </div>
                 ))}
-            </div>
 
+            </div>
             <h2 className="sponsor-title">Silver Sponsor</h2>
             <div className="sponsor-container sponsor-grid">
                 {sponsors.silver.map((img, index) => (
                     <div key={index} className="sponsor-wrapper">
                         <img src={img} alt="Silver Sponsor" className="sponsor-image" />
-                        <span className="sponsor-label">Sponsor</span>
+                        <span className="sponsor-label">Sponsor !!</span>
                     </div>
                 ))}
             </div>
