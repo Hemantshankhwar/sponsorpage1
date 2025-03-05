@@ -25,8 +25,22 @@
 .sponsor-title {
     text-align: center;
     font-size: 1.8rem;
+    font-weight: 600;
     font-family: 'Outfit', serif;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
+    position: relative;
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+.sponsor-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 20%; /* Start at 20% from left */
+    width: 50%; /* Make it 60% of text width */
+    height: 1px;
+    background-color: #FF6B00; /* Same color as before */
 }
 
 .sponsor-container {

@@ -1,4 +1,5 @@
 /* Footer.css */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;300;400;700&display=swap');
 .footer {
     background-color: #131313;
     width: 100%;
@@ -13,6 +14,7 @@
     z-index: 10;
     margin-top: -20px;
 }
+
 .footer-logos-section {
     display: flex;
     flex-direction: column;
@@ -45,6 +47,7 @@
 }
 
 .footer-heading {
+
     font-size: 36px;
     font-weight: 700;
     margin-bottom: 20px;
@@ -53,8 +56,9 @@
 }
 
 .footer-text {
+    font-family: 'Montserrat', sans-serif;
     font-size: 24px;
-    font-weight: 600;
+    font-weight: 300;
     line-height: 38px;
 }
 
@@ -85,26 +89,109 @@
 
 .footer-copyright {
     font-size: 24px;
-    font-weight: 100;
+    /* Using multiple font-weight values for better browser compatibility */
+    font-weight: 200;
+    font-style: normal;
+    font-stretch: normal;
     text-transform: uppercase;
     text-align: center;
     margin-top: 40px;
-    font-family: 'Outfit', ui-rounded;
+    font-family: "Outfit", sans-serif;
+    /* Adding specific Outfit font import for thin weight */
 }
-
+/* Mobile responsive styles */
 @media (max-width: 768px) {
-    .footer-top {
-        flex-direction: column;
-        gap: 40px;
+    .footer {
+        padding: 15px 10px;
+        margin-top: -10px;
     }
 
-    .footer-logos {
-        flex-direction: column;
-        align-items: center;
-        gap: 20px;
+    .footer-top {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 10px;
+        margin-bottom: 15px;
     }
 
     .footer-logos-section {
-        margin-bottom: 20px;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .footer-section {
+        flex: 1;
+        min-width: 30%;
+        padding: 0 5px;
+    }
+
+    .footer-logos {
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+        justify-content: center;
+    }
+
+    .footer-logo {
+        width: 60px;
+        height: 60px;
+    }
+
+    .footer-heading {
+        font-size: 16px;
+        margin-bottom: 5px;
+        line-height: 18px;
+    }
+
+    .footer-text {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .social-icon {
+        width: 30px;
+        height: 30px;
+    }
+
+    .footer-summit {
+        font-size: 14px;
+        line-height: 18px;
+        max-width: 280px;
+        margin: 5px 0;
+    }
+
+    .footer-copyright {
+        font-size: 12px;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer {
+        padding: 8px 5px;
+    }
+
+    .footer-logo {
+        width: 50px;
+        height: 50px;
+    }
+
+    .footer-heading {
+        font-size: 14px;
+    }
+
+    .footer-text {
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    .footer-copyright {
+        font-size: 10px;
+        margin-top: 8px;
+    }
+
+    .footer-top {
+        gap: 8px;
+        margin-bottom: 8px;
     }
 }
