@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@900&display=swap');
+
+
+.app-container {
+    background-color: #ff7833;
+    background-image: url('./assets/bg-pattern.svg');
+    background-repeat: repeat;  
+    background-size: auto; 
+    background-position: center;
+    min-height: 100vh; 
+}
+
+.outfit-900 {
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+}
+.header-wrapper {
+    height: 40vh; /* Takes 30% of app-container's height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10vh 0;
+    padding-left:20%;
+    padding-right:20%; /* Adds spacing above and below */
+}

@@ -1,0 +1,59 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@900&display=swap');
+
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Ensure Full Width & No Overflow */
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    font-family: 'Outfit', sans-serif;
+    background-color: #ff7833; /* Adjust based on design */
+}
+
+/* Root container */
+#root {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+/* Main App Container */
+.app-container {
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+/* General Content Wrapper */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 15px; /* Prevents edge gaps */
+    overflow: hidden;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) { /* Tablets */
+    .container {
+        padding: 0 10px;
+    }
+}
+
+@media (max-width: 375px) { /* iPhone SE */
+    .app-container {
+        padding: 0;
+    }
+
+    .container {
+        padding: 0 5px;
+    }
+}

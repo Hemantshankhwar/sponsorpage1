@@ -1,0 +1,109 @@
+.sponsor-section {
+    background-color: #fff5cf;
+    width: 100%;
+    min-height: 100vh;
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+    border-radius:20px 20px 0 0;
+    position: relative;
+    z-index: 1; /* Puts it behind the footer */
+    margin-bottom: -20px;
+}
+
+/* Titles */
+.sponsor-title {
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+/* Platinum Sponsor - Flexbox */
+.sponsor-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    width: 100%;
+    margin-bottom: 60px;
+}
+
+/* Grid Layout for Gold & Silver Sponsors */
+.sponsor-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    place-items: center;
+    margin-bottom: 40px;
+}
+
+/* Sponsor Image Wrapper */
+.sponsor-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+/* Sponsor Images */
+.sponsor-image {
+    border-radius: 8px;
+    block-size: 200%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Sponsor Text in Bottom Left */
+.sponsor-label {
+    position: absolute;
+    bottom: 8px;
+    left: 8px;
+    background: rgba(255, 255, 255, 0.7); /* Semi-transparent background */
+    padding: 2px 6px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #FF6B00;
+    border-radius: 4px;
+}
+
+/* Responsive Adjustments */
+@media (min-width: 640px) { /* Small screens */
+    .sponsor-image {
+        width: 160px;
+        height: 160px;
+    }
+}
+
+@media (min-width: 768px) { /* Tablets */
+    .sponsor-container {
+        gap: 40px;
+    }
+
+    .sponsor-grid {
+        grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+    }
+
+    .sponsor-image {
+        width: 180px;
+        height: 180px;
+    }
+}
+
+@media (min-width: 1024px) { /* Large screens */
+    .sponsor-container {
+        gap: 50px;
+    }
+
+    .sponsor-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    .sponsor-image {
+        width: 200px;
+        height: 200px;
+    }
+}
