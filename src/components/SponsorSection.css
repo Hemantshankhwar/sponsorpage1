@@ -7,7 +7,7 @@
     flex-direction: column;
     align-items: center;
     max-width: 100%;
-    border-radius:20px 20px 0 0;
+    border-radius: 20px 20px 0 0;
     position: relative;
     z-index: 1; /* Puts it behind the footer */
     margin-bottom: -20px;
@@ -21,7 +21,7 @@
     margin-bottom: 30px;
 }
 
-/* Platinum Sponsor - Flexbox */
+/* Flexbox for Sponsors */
 .sponsor-container {
     display: flex;
     flex-wrap: wrap;
@@ -29,18 +29,6 @@
     gap: 30px;
     width: 100%;
     margin-bottom: 60px;
-}
-
-/* Grid Layout for Gold & Silver Sponsors */
-.sponsor-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 10px;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    place-items: center;
-    margin-bottom: 40px;
 }
 
 /* Sponsor Image Wrapper */
@@ -52,7 +40,8 @@
 /* Sponsor Images */
 .sponsor-image {
     border-radius: 8px;
-    block-size: 200%;
+    width: 330px;
+    height: 330px;
     object-fit: cover;
     display: block;
 }
@@ -73,8 +62,8 @@
 /* Responsive Adjustments */
 @media (min-width: 640px) { /* Small screens */
     .sponsor-image {
-        width: 160px;
-        height: 160px;
+        width: 240px;
+        height: 240px;
     }
 }
 
@@ -88,8 +77,8 @@
     }
 
     .sponsor-image {
-        width: 180px;
-        height: 180px;
+        width: 270px;
+        height: 270px;
     }
 }
 
@@ -103,7 +92,7 @@
     }
 
     .sponsor-image {
-        width: 200px;
-        height: 200px;
+        width: 300px;
+        height: 300px;
     }
 }
