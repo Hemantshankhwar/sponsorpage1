@@ -1,6 +1,6 @@
 import React from "react";
 import skull from "../assets/skull.png";
-import "./SponsorSection.css"; // Make sure this file includes the updated CSS
+import "./SponsorSection.css";
 
 const sponsors = {
     platinum: [skull, skull, skull],
@@ -10,9 +10,9 @@ const sponsors = {
 
 const SponsorSection = () => {
     return (
-        <div className="sponsor-section">
+        <div className="sponsor-section sponsor-grid">
             <h2 className="sponsor-title">Platinum Sponsor</h2>
-            <div className="sponsor-container">
+            <div className="sponsor-container sponsor-grid">
                 {sponsors.platinum.map((img, index) => (
                     <div key={index} className="sponsor-wrapper">
                         <img src={img} alt="Platinum Sponsor" className="sponsor-image" />
@@ -22,7 +22,7 @@ const SponsorSection = () => {
             </div>
 
             <h2 className="sponsor-title">Gold Sponsor</h2>
-            <div className="sponsor-container">
+            <div className="sponsor-container sponsor-grid">
                 {sponsors.gold.map((img, index) => (
                     <div key={index} className="sponsor-wrapper">
                         <img src={img} alt="Gold Sponsor" className="sponsor-image" />
@@ -32,7 +32,7 @@ const SponsorSection = () => {
             </div>
 
             <h2 className="sponsor-title">Silver Sponsor</h2>
-            <div className="sponsor-container">
+            <div className="sponsor-container sponsor-grid">
                 {sponsors.silver.map((img, index) => (
                     <div key={index} className="sponsor-wrapper">
                         <img src={img} alt="Silver Sponsor" className="sponsor-image" />
